@@ -1,5 +1,71 @@
-venv
+# Node.js (Frontend)
+node_modules/
+build/
+dist/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Python (Backend)
+__pycache__/
+*.py[cod]
+*.sqlite3
+*.db
 .env
-**/__pycache__/
+venv/
+env/
+pip-log.txt
+*.log
+*.pot
+instance/
 .idea/
-.flake8
+*.pyc
+*.pyo
+.DS_Store
+*.pyd
+
+# PostgreSQL
+pgdata/
+
+# Docker
+*.swp
+docker-compose.override.yml
+.env.docker
+*.pid
+*.log
+
+# OS generated files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# IDEs
+.vscode/
+*.code-workspace
+.idea/
+*.sublime-workspace
+*.sublime-project
+
+# Logs
+*.log
+logs/
+*.out
+
+# Test coverage
+coverage/
+.coverage
+*.cover
+.hypothesis/
+
+# Build files
+*.egg-info/
+.eggs/
+*.egg
+
+# Miscellaneous
+*.bak
+*.swp
