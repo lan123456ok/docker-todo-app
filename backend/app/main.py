@@ -4,8 +4,12 @@ from sqlalchemy.orm import Session
 from app.database import get_db, Base, engine
 from app.models import Task
 from app.schemas import TaskCreate, TaskResponse
+from app.middlewares import my_middlewares
 
 app = FastAPI()
+
+origins = ["*"]
+my_middlewares.add_cors_middleware(app, origins)
 
 Base.metadata.create_all(bind=engine)
 
